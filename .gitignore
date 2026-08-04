@@ -84,3 +84,6 @@ Thumbs.db
 
 # AWS credentials
 .aws/
+
+.env
+patient.json

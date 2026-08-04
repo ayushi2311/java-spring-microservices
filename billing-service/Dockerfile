@@ -10,7 +10,7 @@ COPY src ./src
 
 RUN mvn clean package
 
-FROM openjdk:21-jdk AS runner
+FROM eclipse-temurin:21-jdk AS runner
 
 WORKDIR /app
 
@@ -20,3 +20,4 @@ EXPOSE 4001
 EXPOSE 9001
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
